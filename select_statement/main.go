@@ -16,7 +16,7 @@ func main() {
 	case val1 := <-ch1:
 		fmt.Println(val1)
 		break
-		fmt.Println("After break")
+		// fmt.Println("After break")
 	case val2 := <-ch2:
 		fmt.Println(val2)
 		// default:
