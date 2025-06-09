@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"time"
+	// "time"
 )
 
 func main() {
@@ -15,11 +15,15 @@ func main() {
 	select {
 	case val1 := <-ch1:
 		fmt.Println(val1)
+		break
+		fmt.Println("After break")
 	case val2 := <-ch2:
 		fmt.Println(val2)
+		// default:
+		// 	fmt.Println("Executed default block")
 	}
 
-	time.Sleep(1 * time.Second)
+	// time.Sleep(1 * time.Second)
 }
 
 func goOne(ch1 chan string) {
@@ -27,5 +31,5 @@ func goOne(ch1 chan string) {
 }
 
 func goTwo(ch2 chan string) {
-	ch2 <- "Channel-2"
+	// ch2 <- "Channel-2"
 }
