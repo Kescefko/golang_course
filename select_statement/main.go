@@ -15,6 +15,7 @@ func main() {
 	select {
 	case val1 := <-ch1:
 		fmt.Println(val1)
+		fmt.Println("test")
 		break
 		// fmt.Println("After break")
 	case val2 := <-ch2:
