@@ -1,0 +1,44 @@
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# Output of `go build`
+/bin/
+/build/
+/dist/
+
+# Output of `go test` with -coverprofile
+*.coverprofile
+
+# Dependency directories (if you vendor dependencies)
+/vendor/
+
+# Go workspace file (Go 1.18+)
+/go.work
+/go.work.sum
+
+# IDE/editor specific
+.idea/
+*.swp
+*.swo
+*.DS_Store
+.vscode/
+*.code-workspace
+
+# Logs
+*.log
+
+# Environment files
+.env
+.env.*
+
+# Byebug temp files
+.byebug_history
+
+# Module files (optional — keep if you want to exclude module lock files)
+/go.sum
