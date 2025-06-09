@@ -10,8 +10,8 @@ func main() {
 	val, ok := <-ch
 	fmt.Println(val, ok)
 	close(ch)
-	val, ok = <-ch
-	fmt.Println(val, ok)
-	val, ok = <-ch
-	fmt.Println(val, ok)
+
+	// Panic: close already closed channel, sending to a closed channel
+	// close(ch)
+	// ch <- 11
 }
